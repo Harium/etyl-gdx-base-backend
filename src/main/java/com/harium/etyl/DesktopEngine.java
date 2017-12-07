@@ -1,6 +1,6 @@
 package com.harium.etyl;
 
-public abstract class DesktopEngine {
+public abstract class DesktopEngine<T> {
 
     protected int w;
     protected int h;
@@ -12,7 +12,11 @@ public abstract class DesktopEngine {
         this.h = h;
     }
 
-    public abstract void init();
+    public void init() {
+
+    }
+
+    public abstract T initCore();
 
     public abstract void setTitle(String title);
 

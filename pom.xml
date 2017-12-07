@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.harium.etyl</groupId>
     <artifactId>etyl-gdx-base-backend</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     <name>Etyl GDX Base Backend</name>
     <description>Etyl's GDX base backend</description>
