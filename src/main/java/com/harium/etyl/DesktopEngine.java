@@ -1,5 +1,7 @@
 package com.harium.etyl;
 
+import com.harium.etyl.loader.Loader;
+
 public abstract class DesktopEngine<T> {
 
     protected int w;
@@ -16,7 +18,19 @@ public abstract class DesktopEngine<T> {
 
     }
 
-    public abstract T initCore();
+    protected void initialSetup(String path) {
+
+    }
+
+    protected void initLoaders() {
+
+    }
+
+    public void addLoader(Loader loader) {
+
+    }
+
+    protected abstract T initCore();
 
     public abstract void setTitle(String title);
 
