@@ -1,11 +1,14 @@
 package com.harium.etyl;
 
+import com.harium.etyl.core.Core;
 import com.harium.etyl.loader.Loader;
 
 public abstract class DesktopEngine<T> {
 
     protected int w;
     protected int h;
+
+    protected Core core;
 
     public DesktopEngine(int w, int h) {
         super();
