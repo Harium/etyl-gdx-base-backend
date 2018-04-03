@@ -1,16 +1,16 @@
 package com.harium.etyl;
 
-import com.harium.etyl.core.Core;
+import com.harium.etyl.core.GDXCore;
 import com.harium.etyl.loader.Loader;
 
-public abstract class DesktopEngine<T> {
+public abstract class BaseEngine<T> {
 
     protected int w;
     protected int h;
 
-    protected Core core;
+    protected GDXCore core;
 
-    public DesktopEngine(int w, int h) {
+    public BaseEngine(int w, int h) {
         super();
 
         this.w = w;
