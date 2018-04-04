@@ -4,10 +4,8 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.assets.AssetManager;
 import com.harium.etyl.commons.context.Context;
+import com.harium.etyl.commons.context.Session;
 import com.harium.etyl.commons.context.load.LoaderListener;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Placeholder of GDXCore
@@ -15,13 +13,13 @@ import java.util.Map;
 public class GDXCore extends ApplicationAdapter implements InputProcessor, LoaderListener<Context> {
 
     AssetManager assets;
-    Map<String, Object> session = new HashMap<>();
+    Session session = new Session();
 
     public GDXCore(int w, int h) {
 
     }
 
-    public Map<String, Object> getSession() {
+    public Session getSession() {
         return session;
     }
 
