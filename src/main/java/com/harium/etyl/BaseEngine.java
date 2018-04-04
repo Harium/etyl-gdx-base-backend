@@ -3,6 +3,9 @@ package com.harium.etyl;
 import com.harium.etyl.core.GDXCore;
 import com.harium.etyl.loader.Loader;
 
+/**
+ * Placeholder of BaseEngine
+ */
 public abstract class BaseEngine<T> {
 
     protected int w;

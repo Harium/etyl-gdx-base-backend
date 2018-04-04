@@ -6,6 +6,12 @@
     <groupId>com.harium.etyl</groupId>
     <artifactId>etyl-gdx-base-backend</artifactId>
     <version>1.1.1</version>
+    <properties>
+        <libgdx.version>1.9.7</libgdx.version>
+        <javadoc.opts>-Xdoclint:none</javadoc.opts>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <gpg.executable>gpg2</gpg.executable>
+    </properties>
     <packaging>jar</packaging>
     <name>Etyl GDX Base Backend</name>
     <description>Etyl's GDX base backend</description>
@@ -40,16 +46,18 @@
     </distributionManagement>
     <dependencies>
         <dependency>
+            <groupId>com.harium</groupId>
+            <artifactId>etyl-commons</artifactId>
+            <version>1.0.10</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>com.badlogicgames.gdx</groupId>
             <artifactId>gdx</artifactId>
-            <version>1.9.7</version>
+            <version>${libgdx.version}</version>
         </dependency>
     </dependencies>
-    <properties>
-        <javadoc.opts>-Xdoclint:none</javadoc.opts>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <gpg.executable>gpg2</gpg.executable>
-    </properties>
     <build>
         <plugins>
             <plugin>
