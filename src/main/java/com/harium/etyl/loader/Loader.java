@@ -7,7 +7,7 @@ public class Loader {
     AssetManager assets;
     String url;
 
-    public void setUrl(String path) {
+    public void setUrl(String url) {
         this.url = url;
     }
 
