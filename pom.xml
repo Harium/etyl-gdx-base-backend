@@ -46,16 +46,18 @@
     </distributionManagement>
     <dependencies>
         <dependency>
-            <groupId>com.harium</groupId>
-            <artifactId>etyl-commons</artifactId>
-            <version>1.0.10</version>
+            <groupId>com.harium.etyl</groupId>
+            <artifactId>commons</artifactId>
+            <version>[1.2.2,)</version>
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.badlogicgames.gdx</groupId>
             <artifactId>gdx</artifactId>
-            <version>${libgdx.version}</version>
+            <version>[${libgdx.version},)</version>
+            <scope>provided</scope>
+            <optional>true</optional>
         </dependency>
     </dependencies>
     <build>
