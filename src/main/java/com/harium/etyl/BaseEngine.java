@@ -1,5 +1,6 @@
 package com.harium.etyl;
 
+import com.harium.etyl.commons.module.Module;
 import com.harium.etyl.core.GDXCore;
 import com.harium.etyl.loader.Loader;
 
@@ -36,6 +37,10 @@ public abstract class BaseEngine<T> {
 
     }
 
+    public void addModule(Module module) {
+        core.addModule(module);
+    }
+
     protected abstract T initCore();
 
     public abstract void setTitle(String title);
@@ -45,4 +50,5 @@ public abstract class BaseEngine<T> {
     public abstract void enableFullScreen();
 
     public abstract void disableFullScreen();
+
 }

@@ -6,6 +6,7 @@ import com.badlogic.gdx.assets.AssetManager;
 import com.harium.etyl.commons.context.Context;
 import com.harium.etyl.commons.context.Session;
 import com.harium.etyl.commons.context.load.LoaderListener;
+import com.harium.etyl.commons.module.Module;
 
 /**
  * Placeholder of GDXCore
@@ -60,6 +61,10 @@ public class GDXCore extends ApplicationAdapter implements InputProcessor, Loade
     }
 
     public void onLoad(Context context) {
+
+    }
+
+    public void addModule(Module module) {
 
     }
 }
