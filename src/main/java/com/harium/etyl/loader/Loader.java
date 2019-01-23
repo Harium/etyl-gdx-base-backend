@@ -14,4 +14,8 @@ public class Loader {
     public void setAssets(AssetManager assets) {
         this.assets = assets;
     }
+
+    public void dispose() {
+
+    }
 }
